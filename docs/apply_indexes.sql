@@ -1,0 +1,12 @@
+CREATE INDEX idx_sales_status_created    ON sales (status, created_at);
+CREATE INDEX idx_sales_created           ON sales (created_at);
+CREATE INDEX idx_sales_user              ON sales (user_id);
+CREATE INDEX idx_sale_items_sale         ON sale_items (sale_id);
+CREATE INDEX idx_sale_items_product      ON sale_items (product_id);
+CREATE INDEX idx_products_status_qty     ON products (status, quantity);
+CREATE INDEX idx_products_category       ON products (category_id);
+CREATE INDEX idx_products_supplier       ON products (supplier_id);
+CREATE INDEX idx_stock_movements_product ON stock_movements (product_id);
+CREATE INDEX idx_stock_movements_created ON stock_movements (created_at);
+CREATE INDEX idx_purchases_status        ON purchases (status, created_at);
+CREATE INDEX idx_purchase_items_product  ON purchase_items (product_id);

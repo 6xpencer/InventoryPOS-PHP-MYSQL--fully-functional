@@ -1,0 +1,9 @@
+{
+  "name": "apex-pos",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Apex POS - Inventory & Sales Management (React + PHP + MySQL)",
+  "scripts": {
+    "start": "node start.js"
+  }
+}
